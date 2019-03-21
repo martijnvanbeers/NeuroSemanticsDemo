@@ -104,6 +104,7 @@ Bootstrap(app)
 
 @app.route('/')
 def index():
+    print(request.script_root)
     return render_template('index.html')
 
 @app.route('/classify/', methods=['GET'])
